@@ -66,9 +66,12 @@ git clone https://github.com/replate/replate-business.git
 cd replate-business
 ```
 
-4. Run the following:
+4. Run bundle install
 ```shell
 bundle install
+```
+5. Run yarn install
+```shell
 yarn install
 ```
 
