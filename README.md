@@ -8,10 +8,11 @@ This guide documents how to set install Replate on a Windows machine.
 3. [Install Ruby](#install-ruby)
 4. [Install Rails](#install-rails)
 5. [Install bundler](#install-bundler)
-6. [Clone and Setup Replate-Business](#clone-and-setup-replate-business)
-7. [Update Config](#update-config)
-8. [Setup the Database](#setup-the-database)
-9. [Start the Server](#start-the-server)
+6. [Install mimemagic](#install-mimemagic)
+7. [Clone and Setup Replate-Business](#clone-and-setup-replate-business)
+8. [Update Config](#update-config)
+9. [Setup the Database](#setup-the-database)
+10. [Start the Server](#start-the-server)
 
 ## Install Node.js
 
@@ -52,6 +53,16 @@ rails -v
 ## Install bundler
 ```shell
 gem install bundler:2.3.25
+```
+
+## Install mimemagic
+1. Download the shared-mime-info from https://gitlab.freedesktop.org/xdg/shared-mime-info/uploads/0440063a2e6823a4b1a6fb2f2af8350f/shared-mime-info-2.0.tar.xz
+2. Extract the downloaded package with 7Zip or WinRAR.
+3. Place it in a location of your choice e.g. "C:\package".
+4. Set a new Environment Variable with a name: FREEDESKTOP_MIME_TYPES_PATH and browse value to the location e.g. C:\shared-mime-info 2.0\data\
+5. Install mimemagic with gem
+```shell
+gem install mimemagic
 ```
 
 ## Clone and Setup Replate-Business
