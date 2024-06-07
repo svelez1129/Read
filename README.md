@@ -76,8 +76,16 @@ git clone https://github.com/replate/replate-business.git
 ```shell
 cd replate-business
 ```
+4. Add the following to the Gemfile under ‘core’:
+```shell
+gem 'sys-proctable'
+```
+5. Add the following into the Gemfile under 'development':
+```shell
+gem 'tzinfo-data'
+```
 
-4. Run bundle install
+6. Run bundle install
 ```shell
 bundle install
 ```
@@ -85,6 +93,7 @@ bundle install
 ```shell
 yarn install
 ```
+
 
 ## Update Config
 
