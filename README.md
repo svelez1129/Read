@@ -59,7 +59,7 @@ gem install bundler:2.3.25
 1. Download the shared-mime-info from https://gitlab.freedesktop.org/xdg/shared-mime-info/uploads/0440063a2e6823a4b1a6fb2f2af8350f/shared-mime-info-2.0.tar.xz
 2. Extract the downloaded package with 7Zip or WinRAR.
 3. Place it in a location of your choice e.g. "C:\package".
-4. Set a new Environment Variable with a name: FREEDESKTOP_MIME_TYPES_PATH and browse value to the location e.g. C:\shared-mime-info 2.0\data\freedesktop.org.xml
+4. Set a new Environment Variable with a name: FREEDESKTOP_MIME_TYPES_PATH and browse value to the location e.g. C:\package\shared-mime-info 2.0\data\freedesktop.org.xml
 5. Install mimemagic with gem
 ```shell
 gem install mimemagic
