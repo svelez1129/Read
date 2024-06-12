@@ -11,8 +11,9 @@ This guide documents how to set install Replate on a Windows machine.
 6. [Install mimemagic](#install-mimemagic)
 7. [Clone and Setup Replate-Business](#clone-and-setup-replate-business)
 8. [Update Config](#update-config)
-9. [Setup the Database](#setup-the-database)
-10. [Start the Server](#start-the-server)
+9. [Update Application.rb](#update-application.rb)
+10. [Setup the Database](#setup-the-database)
+11. [Start the Server](#start-the-server)
 
 ## Install Node.js
 
@@ -93,7 +94,17 @@ bundle install
 ```shell
 yarn install
 ```
+## Update Application.rb
 
+1. In line 85-89 where autoload is, add the following line of code:
+```shell
+replate = root.join("lib", "replate") # Add this line
+```
+2. Then update the two lines afterwards:
+```shell
+config.autoload_paths << lib << replate # Update this line
+config.eager_load_paths << lib << replate # Update this line
+```
 
 ## Update Config
 
